@@ -1,0 +1,524 @@
+:root{
+    --background-blanco:#FDFCFC;
+    --background-morado:#4B3842;
+    --color-fuente-principal:#000000;
+    --color-claro:#9192A2;
+    --color-botones:#595565;
+    --color-gris-morado:#343D3F;
+    --color-boton-enviar:#B996BD;
+    --color-error-formulario:#c70707;
+
+    --monserrat: 'Monserrat', sans-serif;
+}
+
+body{
+    font-family: var(--monserrat);
+    width: 100%;
+    margin: 0;
+    background:linear-gradient(var(--background-morado),transparent,var(--background-morado));
+}
+
+.header-container{
+    position:fixed;
+    width: 100%;
+    right: auto;
+    top: 0px;
+}
+
+.header .header-container{
+    background-color: var(--color-claro);
+    display: flex; /*alinear los elementos uno a lado del otro*/
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.hader-menu-container .header-menu{
+    display: flex;
+}
+
+.header-titulo, .logo{
+    width: 120px;
+    margin: 0 0 0 5px;
+}
+
+.header-titulo a{
+    text-decoration: none;
+    color: var(--color-fuente-principal);
+}
+
+.header-menu-lista{
+    margin: 0 30px 0 0;
+    list-style: none;
+}
+
+.header-menu-lista:hover{
+    transform: scale(1.4);
+}
+
+.header-menu-lista a{
+    text-decoration: none;
+    color: var(--color-fuente-principal);
+    font-size: 18px;
+}
+
+/*SECCIÓN DE PRESENTACIÓN*/
+.cont .container{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:  wrap;
+    width: 100%;
+    gap: 50px;
+    margin-top: 180px;
+}
+
+.presentacion-titulo{
+    text-align: center;
+    font-size: 35px;
+}
+
+.presentacion-subtitulo{
+    text-align: center;
+}
+
+/*caja de foto e iconos*/
+.container-perfil{
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil .imagen-perfil{
+    height: 250px;
+}
+
+.container-redes .redes-sociales{
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociales .redes-sociales-item{
+    list-style: none;
+}
+
+.redes-sociales-item a img{
+    height: 50px;
+}
+
+.redes-sociales-item a img:hover{
+    transform: scale(1.1);
+}
+
+/*SECCIÓN SOBRE MI*/
+.about-container{
+    margin-top: 150px;
+    justify-content: center;
+}
+
+.about-titulo{
+    text-align: center;
+    font-size: 35px;
+}
+
+.about-container-text{
+    display: flex;
+    gap: 80px;
+    align-items: center;
+}
+
+.about-text{
+    text-align:justify;
+    border: var(--color-claro) 2px solid;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    border-color: var(--color-botones);
+    background:linear-gradient(#9192A2,transparent);
+} 
+
+.about-text{
+    width: 600px;
+    height: max-content;
+    margin: 0 0 0 120px;
+}
+
+.about-container-elem{
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+    text-align: center;
+}
+
+.about-curriculum .about-cv-imag{
+    width: 350px;
+}
+
+.boton-curriculum{
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 15px;
+    color: var(--color-fuente-principal);
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color: var(--color-claro);
+    border-color: var(--background-blanco);
+    border-width: 2px;
+    border-style: solid;
+    border-radius:35px;
+}
+
+.boton-curriculum:hover{
+    border-color: var(--color-botones);
+    transform: scale(1.1);
+}
+
+/*SECCIÓN SKILLS*/
+.skills-titulo{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 150px;
+}
+
+.skills-elementos{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.skills-box{
+    border: var(--color-claro) 1px solid;
+    padding: 20px 20px 20px 20px;
+    border-radius: 5px;
+    border-color: #9192A2;
+    background:linear-gradient(#9192A2,transparent);
+}
+
+.skills-box:hover{
+    transform: scale(1.1);
+}
+
+.ul-skills{
+    padding: 20px 20px 20px 20px;
+}
+
+.skills-img, .skills-name{
+    list-style: none;
+}
+
+.skills-img img{
+    width: 100px;
+    
+}
+
+.skills-name{
+    text-align: center;
+}
+
+/*SECCIÓN FORMACIÓN*/
+.formation-titulo{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 150px;
+}
+
+.formation-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.formation-box .formation-img{
+    border: var(--background-blanco) 1px solid;
+    padding: 30px 30px 30px 30px;
+    border-radius: 5px;
+    background:linear-gradient(var(--background-blanco),transparent);
+}
+
+.formation-img, .formation-name{
+    list-style: none;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.img-uam, .img-alura{
+    width: 200px;
+    height: 200px;
+}
+
+
+/*SECCIÓN PORTAFOLIO*/
+.portafolio-titulo{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 150px;
+}
+
+.portafolio-elementos{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    
+}
+
+.portafolio-box{
+    width: auto;
+    border: #9192A2 2px solid;
+    border-radius: 5px;
+    background:linear-gradient(#9192A2, transparent,#9192A2) ;
+}
+
+.portafolio-box img{
+    width: 350px;
+}
+
+.portafolio-info h3{
+    text-align: center;
+}
+
+.portafolio-mas-info{ 
+    text-align: center;
+}
+
+.portafolio-repo-boton{
+    text-decoration: none;
+    font-weight: 600px;
+    font-size: 15px;
+    color: var(--color-fuente-principal);
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color: var(--color-claro);
+    border-color: var(--background-blanco);
+    border-width: 2px;
+    border-style: solid;
+    border-radius:35px;
+}
+
+.portafolio-repo-boton:hover{
+    border-color: var(--color-botones);
+    transform: scale(1.1);
+}
+
+/*SECCIÓN HOBBIES*/
+
+.hobbies-titulo{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 150px;
+}
+
+.hobbies-container{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hobbies-box{
+    border: var(--color-claro) 1px solid;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    border-color: #9192A2;
+    background:linear-gradient(#9192A2,transparent);
+}
+
+.hobbies-box:hover{
+    transform: scale(1.1);
+}
+
+.ul-hobbies{
+    padding: 10px 10px 10px 10px;
+}
+
+.hobbies__img, .hobbies__name{
+    list-style: none;
+}
+
+.hobbies__img img{
+   width: 80px;
+}
+
+.hobbies__name{
+    text-align: center;
+}
+
+/*SECCIÓN CONTACTO*/
+.formulario-titulo{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 150px;
+}
+
+.formcont-text .form-contacto-form{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form-contacto-input{
+    width: 600px;
+    height: 60px;
+    border: none;
+    border-radius: 0.3rem;
+    margin-bottom: 15px;
+    box-shadow: 1px 5px 1px 1px var(--color-botones);
+}
+
+.div-form{
+    margin-bottom:5px;
+}
+
+
+.form-contacto-area{
+    min-width: 600px;
+    min-height: 150px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 0.3rem;
+    box-shadow: 1px 5px 1px 1px var(--color-botones);
+}
+
+
+.input-message-error{
+    display: none;
+    color: var(--color-error-formulario);
+}
+
+.div-form--invalid .form-contacto-input, .div-form--invalid .form-contacto-area{
+    border: 2px solid var(--color-error-formulario);
+}
+
+
+.div-form--invalid .input-message-error {
+    display: block;
+    color: var(--color-fuente-principal);
+}
+
+.form-contacto-boton{
+    width: 600px;
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--color-fuente-principal);
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:30px;
+    padding-right:30px;
+    background-color: var(--color-claro);
+    border-width: 2px;
+    border-style: none;
+}
+
+.form-contacto-boton:hover{
+    background: var(--color-boton-enviar);
+
+}
+
+
+/*SECCIÓN FOOTER*/
+.footer{
+    margin: 40px 0 0 0;
+}
+
+.footer-container{
+    background-color: var(--color-fuente-principal);
+
+    display: flex; /*alinear los elementos uno a lado del otro*/
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.footer-derechos{
+    color: var(--background-blanco);
+    margin: 20px 0 0 20px;
+    text-align: center;
+    
+}
+
+.footer-redes{
+    margin: 0 0 0 35px;
+}
+
+.footer-redes .footer-container-iconos{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.footer-iconos{
+    list-style: none;
+}
+
+.footer-iconos a img{
+    height: 50px;
+}
+
+.footer-iconos a img:hover{
+    transform: scale(1.1);
+}
+
+/*MEDIAS QUERYS PARA FORMATO RESPONSIVO*/
+@media (max-width: 780px){
+    .header .header-container{
+       flex-direction: column;
+    }
+
+    .hader-menu-container{
+        display: none;
+    }
+
+    .header-menu-lista{
+        margin: 0 10px 0 0;
+        list-style: none;
+        width: max-content;
+    }
+
+    .about-container-text{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .about-text{
+        margin: 0 0 0 0;
+        height: max-content;
+    }
+
+    .portafolio-box img {
+        width: 300px;
+    }
+
+    .form-contacto-form{
+        padding: 0 10px 0;
+    }
+
+    .div-form{
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    textarea{
+       min-width: 80%;
+    }
+
+    .form-contacto-boton{
+        display: flex;
+        width: 80%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+}
+
